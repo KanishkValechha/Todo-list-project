@@ -108,6 +108,9 @@ button {
   .todo-list {
     grid-template-columns: 1fr;
   }
+  .sort {
+    margin-left: 10%;
+  }
 }
 
 .fall {
