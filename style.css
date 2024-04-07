@@ -22,9 +22,9 @@ body {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: min(12vw, 3rem);
   margin: auto;
-  margin-bottom: 5rem;
+  margin-bottom: min(20%, 5rem);
 }
 
 form {
