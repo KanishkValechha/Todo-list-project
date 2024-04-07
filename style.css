@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color-scheme: light dark;
+  animation: fadeIn 2s;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(30, 30, 30);
+  color: white;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vh;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: auto;
+  margin-bottom: 5rem;
+}
+
+form {
+  display: flex;
+  min-height: 3vh;
+  transition: all 0.3s ease-in-out;
+}
+
+.input-box {
+  display: flex;
+  margin-left: 10%;
+  width: 100%;
+  resize: none;
+  overflow-y: auto;
+  border-radius: 5px;
+  background-color: rgb(30, 30, 30);
+  border-color: white;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+textarea {
+  padding: 5px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  padding: 3%;
+  cursor: pointer;
+}
+
+.addButton {
+  padding: 0;
+  width: 3rem;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.todo-list {
+  display: grid;
+  padding: 0 10%;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.todo {
+  display: flex;
+  list-style: none;
+  width: 78%;
+  flex-wrap: wrap;
+  padding: 2%;
+}
+
+.fa-check,
+.fa-trash {
+  pointer-events: none;
+}
+
+.todo-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: solid 1px white;
+  border-radius: 6px;
+  padding: 0 0 0 2%;
+  transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 1024px) {
+  .todo-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .todo-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.fall {
+  transform: translateY(30vh);
+  opacity: 0;
+}
+
+.completed {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.sort {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sort > button {
+  margin: 30% 20% 40% 0%;
+  border: 1px solid white;
+  padding: 10%;
+  border-radius: 5px;
+}
+
+.list-container {
+  animation: fadeIn 2s;
+}
+
+.display {
+  display: grid;
+}
+
+.todo-div.dont {
+  display: none;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
