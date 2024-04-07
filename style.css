@@ -57,6 +57,7 @@ button {
   border: none;
   padding: 3%;
   cursor: pointer;
+  font-size: min(3vw, 0.9rem);
 }
 
 .addButton {
@@ -73,6 +74,7 @@ button {
   padding: 0 10%;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
+  font-size: min(3vw, 1rem);
 }
 
 .todo {
@@ -130,6 +132,7 @@ button {
 }
 
 .sort > button {
+  display: flex;
   margin: 30% 20% 40% 0%;
   border: 1px solid white;
   padding: 10%;
